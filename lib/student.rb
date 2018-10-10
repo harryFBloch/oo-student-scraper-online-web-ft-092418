@@ -18,7 +18,10 @@ class Student
   end
 
   def self.create_from_collection(students_array)
-    Scraper.
+    students_array.each {|student|
+      
+    }
+    Scraper.scrape_profile_page()
   end
 
   def add_student_attributes(attributes_hash)
